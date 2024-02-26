@@ -1,0 +1,277 @@
+Week09 Review:
+  	Abstraction
+  	Polymorphism
+  	Exceptions
+
+
+Come back at 2:20 PM US EST
+
+
+Encapsulation: Data Hiding
+
+Inheritance: Is A relationship
+
+Abstraction: Hiding The Implementation Details
+
+    focus on essentials and ignore the small details
+
+      Abstract method: a method without the body/implementation
+                    meant to be overriden.
+
+
+      Abstract class: meant to be parent
+
+                To provide all the common features to ALL SUBCLASSES
+
+                Can not create object from it
+
+
+      Interface: meant to be parent
+              To provide additional features to any class that needs it
+
+
+
+
+abstract Employee:
+    name
+    salary
+    ...
+
+    work();
+
+
+interface RemoteJob
+
+      workFromHome();
+
+
+Teacher extends Employee:
+
+    work():
+      teaching
+
+
+Janitor extends Employee implement RemoteJob:
+
+    work():
+      cleaning
+
+    workFromHome()
+
+
+Developer extends Employee:
+
+     work():
+        Coding
+
+Driver extends Employee implement RemoteJob:
+
+     work():
+      driving
+
+    workFromHome()
+
+Tester extends Employee:
+
+    work():
+      testing
+
+Pilot extends Employee implement RemoteJob:
+
+    work():
+      flying
+
+    workFromHome()
+
+
+
+Exception: checked or unchecked
+
+
+
+Static vs Instance:
+
+    static: one copy
+
+        variable should be static if the value is same for ALL the objects of the class
+
+        method should be static if the method does not need to access to any instance variables or methods of the class
+
+
+    instance: multiple copies
+
+        variable should be instance if the value is different for each object of the class
+
+        method should be instance if the method needs to access to any instance variables or instance methods of the class
+
+
+
+
+Practice Tasks:
+1. Create a class named 'Animal' with the following specifications:
+   Attributes:
+     - name: String
+     - age: int
+     - breed: String (final)
+     - gender: String (final)
+     - color: String (final)
+
+  Encapsulate all the fields:
+          Conditions:
+              The name attribute cannot be set to null or empty. If this condition is violated, throw an InvalidNameException
+
+              The age attribute cannot be set to zero or negative. If this condition is violated, throw an InvalidAgeException.
+
+              The gender attribute can only be set to 'male' or 'female'. If this condition is violated, throw an InvalidGenderException.
+
+
+   Add a constructor that sets all fields when an Animal object is instantiated.
+
+   Actions:
+     - eat()
+     - drink()
+     - sleep()
+     - toString()
+
+
+2. Create the following subclasses of 'Animal' with their specific attributes and actions:
+
+   2.1 Dog Class:
+      Attributes:
+          name, age, breed, gender, color
+
+      Actions:
+          eat(), drink(), sleep(), toString(), bark(), play()
+
+
+   2.2 Cat Class:
+      Attributes:
+          name, age, breed, gender, color
+
+      Actions:
+        eat(), drink(), sleep(), toString(), play()
+
+
+   2.3 Lion Class:
+      Attributes:
+          name, age, breed, gender, color
+
+      Actions:
+        eat(), drink(), sleep(), toString(), hunt()
+
+
+   2.4 Tiger Class:
+      Attributes:
+          name, age, breed, gender, color
+
+      Actions:
+        eat(), drink(), sleep(), toString(), hunt()
+
+
+   2.5 Parrot Class:
+       Attributes:
+          name, age, breed, gender, color
+
+      Actions:
+          eat(), drink(), sleep(), toString(), play(), fly()
+
+
+   2.6 Eagle Class:
+      Attributes:
+          name, age, breed, gender, color
+
+      Actions:
+          eat(), drink(), sleep(), toString(), hunt(), fly()
+
+
+   2.7 Dolphin Class:
+      Attributes:
+          name, age, breed, gender, color
+
+      Actions:
+        eat(), drink(), sleep(), toString(), play(), swim()
+
+
+   2.8 Shark Class:
+      Attributes:
+          name, age, breed, gender, color
+
+      Actions:
+        eat(), drink(), sleep(), toString(), hunt(), swim()
+
+
+    2.8 Duck Class:
+      Attributes:
+          name, age, breed, gender, color
+
+      Actions:
+        eat(), drink(), sleep(), toString(), fly(), play(), swim()
+
+
+
+
+-----------------------------------------------------
+
+abstract class Animal:
+      Attributes:
+          name, age, breed, gender, color
+
+      Actions:
+        eat();
+        drink(){ }
+        sleep();
+        toString(){ }
+
+
+interface Plyable:
+     play()
+
+
+interface WildAnimal:
+     hunt()
+
+
+interface Swimmable:
+     swim()
+
+
+interface Flyable:
+     fly()
+
+
+
+Dog Class extends Animal implements Playable:
+      bark()
+
+Cat Class extends Animal implements Playable:
+
+
+Lion Class extends Animal implements WildAnimal:
+
+
+Tiger Class extends Animal implements WildAnimal:
+
+
+Parrot Class extends Animal implements Playable, Flyable:
+
+
+Eagle Class extends Animal implements WildAnimal, Flyable:
+
+
+Dolphin Class extends Animal implements Playable, Swimmable:
+
+
+Shark Class extends Animal implements WildAnimal, Swimmable:
+
+
+Duck Class extends Animal implements  Flyable, Swimmable, Playable:
+
+
+
+
+--------------------------------
+
+Boat Class extends Vehicle implements Swimmable:
+  Engine
+
+AirPlane class extends Vehicle implements Flyable:

@@ -1,0 +1,71 @@
+02/03/2024
+
+Week07 Review:
+	Array
+	For Each Loop
+	Multi-Dimensional Array
+	ArrayList
+	Array vs ArrayList
+
+
+
+Data Structure: to store multiple elements.
+				to use data efficiently
+
+				Array, Collection, Map
+
+Array: Supports both primitives & non-primitives data types.
+		Can be multi-dimensional
+		Size is fixed
+		Faster
+
+	Single dimensional array: to store elements. A container for storing multiple element
+
+	multi-dimensional array: to store arrays. A container for storing multiple arrays
+
+
+For Each Loop: A loop that's already been iterated
+
+			total number of iteration and order of iteration are fixed
+
+			MUST HAVE A DATA STRUCTURE
+
+			Remove Methods:
+				remove(): When we need to remove one single element ONLY.
+							DO NOT USE IT WHEN LOOPING THROUGH A COLLECTION
+
+				removeAll(): WHen we need to remove multiple elements & the elements are known in advance
+
+				clear(): When we need to remove all the elements
+
+				retainAll(): WHen we need to keep specific elements and remove the rest
+
+				removeIf(): When we need to remove elements under conditions
+
+
+ArrayList: Supports non-primitive types ONLY
+			Can not be multi-dimensional
+			Size is dynamic (growable in nature)
+
+
+
+Tasks:
+Write a program that can remove string elements from an arraylist if the first and last characters of the string are same
+    ex:
+        list = {"Anna", "Canada", "Bob", "David", "Lan", "Abida", "Ebrahim", "Farida"}
+
+    output:
+        ["Canada", "Lan", "Ebrahim", "Farida"]
+
+
+Write a program that can return the nth largest number from an arraylist
+            ex:
+                arraylist = {1,2,3,4,5,6,7,7,8,8}
+                n = 3
+
+            output:
+                6
+
+
+
+
