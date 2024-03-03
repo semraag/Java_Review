@@ -1,0 +1,237 @@
+02/24/2024
+
+Week10 Review:
+	Polymorphism
+	Collection
+	Map
+
+
+
+Collection (I): size is dynamic
+			Only supports non-primitives
+			Can not be multi-dimensional
+
+
+		List (I): Has index, Accepts duplicates
+
+				ArrayList (C): Array Based Class ===> searching/accessing the element is faster
+
+				LinkedList (C): Node Based Class ===>  Insertion/Deletion of the element is faster
+
+				Vector (C): Synchronized =====> Thread safe, slow
+
+				Stack (C): Synchronized, LIFO =====> Thread safe, slow
+
+
+		Set (I): Does not have index, Does not accept duplicates
+
+				HashSet (C): Random order. fastest, accepts null
+
+				LinkeedHashSet (C): Insertion order. accepts null
+
+				TreeSet (C): Sorted Order. does not accept null
+
+
+
+		Queue (I): Does not have index, Accepts duplicates. FIFO
+
+
+
+Map (I): Collection of Pairs (key + value)
+	 size is dynamic
+	 Only supports non-primitives
+	 key MUST be unique
+
+	 HashMap (C): Random order, fastest. accepts null
+
+	 LinkedHashMap (C): Original Insertion order. accepts null
+
+
+	 json, properties files
+
+
+
+
+
+
+
+Java Topics For Automation:
+	1. Variables
+			1.1 What is it and what do we need it for
+			1.2 how to declare and use
+			1.3 updating
+
+	2. Operators:
+			++, --
+			shorthand assignment: +=, -+, /=, *=
+			Relational
+			Logical
+
+			2.1 What's the functionality
+			2.2 How to apply to the operand(s)
+
+
+	3. Selection statements:
+			Single if
+			If & else
+			else if
+			Switch
+
+			3.1 What do we need them for
+			3.1 Syntax & execution flow
+			3.2 How If Statements Work
+			3.3 When to use switch over if statement
+
+
+	4. Loops:
+			For Loop
+			For Each Loop
+			While Loop
+
+			3.1 What is a loop and what do we need it for
+			3.2 Iterating in Index order & reverse order
+			3.3 When to use while loop over for loop
+
+
+	5. Methods:
+			void method
+			return method
+			Parameterization
+			overloading
+
+
+			5.1 What is a method and what do we need it for
+			5.2 Syntax
+			5.3 How to call and execute the method
+			5.4 How to call the method with the parameters
+			5.5 How to overload a method in a class
+
+
+	6. Class & Objects:
+			Custom Class
+			Custom Objects
+			Instance Variables & Methods
+			Constructor
+			Static Variables, methods, and block
+
+
+			6.1 What is a class, what do we need it for, and how to write it
+			6.2 static vs instance differences
+			6.3 When the variables & methods of the custom class should be static or instance
+			6.4 What's a constructor, and how it works
+			6.5 what do we use the 'this' keyword for
+			6.6 What is an object and how to instantiate it
+			6.7 How to call the instance members
+			6.8 How to call the static members
+			6.9 Memory allocation for the different objects
+
+
+	7. String Class:
+			String methods
+			Immutable
+			Looping through string
+
+			7.1 What is a string and what do we need it for
+			7.2 Common String methods functionality: charAt, substring, length, index, replace, lower & upper, starts & endsWith, equals, contains
+			7.3 What does immutable mean
+			7.5 Looping through a string in index order
+
+
+	8. Array:
+			Fixed Size
+			Index
+			Updating elements
+			2-dimensional array
+
+			8.1 What is a data structure and what do we need it for
+			8.2 When we should use an array instead of other data structures
+			8.3 Declaring and initializing array
+			8.4 updating array elements
+			8.5 Looping through an array in the index and reversed orders
+			8.6 What is a 2-dimensional array and what do we need it for
+
+
+	9. Encapsulation:
+				private
+				getters & setters
+
+
+			9.1 What is encapsulation and what do we need it for
+			9.2 How to create getter & setter for private instance variables
+			9.3 Why use getters & setters to access it instead of just making it public
+			9.4 What if the variable is final
+
+
+	10. Inheritance:
+			Single Inheritance
+			Hierarchical Inheritance
+			super keyword
+			Overriding
+
+			10.1 What is inheritance and what do we need it for
+			10.2 Extends keyword
+			10.3 What is inherited and what is not inherited
+			10.4 The impact of parent class constructors on the child classes
+			10.5 Be able to understand the constructor's chaining & Execution
+			10.6 What is overriding and how to override the method
+			10.7 be able to explain IS A relations
+
+
+	11. Abstraction:
+			Abstract class
+			Interface
+
+
+			11.1 What is an abstract class and how it's different than a non-abstract class
+			11.2 What is an interface and what is it needed for
+
+
+	12. Polymorphism:
+			Parent reference type
+			instanceof keyword
+			downcasting
+
+			12.1 What is polymorphism and what do we need it for
+			12.2 What happens when the parent is the reference type?
+			12.3 How to access object members that are not in the reference type
+
+
+	13. Collection:
+			List: ArrayList
+			Set: HashSet, LinkedHashSet
+			Adding & Removing
+			Updating Elements
+
+			13.1 When do we need to use collection over an array
+			13.2 Difference between List & Set
+			13.3 Be familiar with the methods of List: get, set, contains, add, remove, removeIf.
+			13.4 Be familiar with the methods of Collections utility
+			13.5 Looping through List in the index and reversed order
+
+
+	14. Map:
+			HashMap
+			LinkedHashMap
+			Updating the pairs
+
+
+			14.1 When do we need to use the map over collection and array
+			14.2 Methods of Map: containsKey, containsValue, get, put, keySet, entrySet, values, replace
+			14.3 Looping Through Maps
+
+
+
+Top Students:
+	Completed each modules recordings & practice tasks
+	Attedned every single Saturday's live classes
+
+
+
+
+
+
+
+Joint Bank Account: $ 200 - 100 = 100
+
+Husband is trying to widraw $ 100
+wife is trying to widraw $ 500
